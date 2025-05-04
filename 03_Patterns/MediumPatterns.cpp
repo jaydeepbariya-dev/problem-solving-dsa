@@ -53,6 +53,82 @@ int main()
       }
       cout << endl;
     }
+
+    //7. Left Side Triangle
+    for(int i = 1; i <= rows; i++){
+      // Spaces
+      for(int j = 1; j <= (rows-i); j++){
+        cout << "   ";
+      }
+      
+      // Stars
+      for(int j = 1; j <= i; j++){
+        cout << " * ";
+      }
+      
+      cout << endl;
+    }
+    
+    //8. Row Number Triangle
+    for(int i = 1; i <= rows; i++){
+      // Spaces
+      for(int j = 1; j <= (rows-i); j++){
+        cout << "   ";
+      }
+      
+      // Stars
+      for(int j = 1; j <= i; j++){
+        cout << " " << i << " ";
+      }
+      
+      cout << endl;
+    }
+    
+    //9. Row Sequence Triangle
+    for(int i = 1; i <= rows; i++){
+      // Spaces
+      for(int j = 1; j <= (rows-i); j++){
+        cout << "   ";
+      }
+      
+      // Stars
+      for(int j = 1; j <= i; j++){
+        cout << " " << j << " ";
+      }
+      
+      cout << endl;
+    }
+    
+    
+    //10. Row Alphabet Sequence Triangle
+    for(int i = 1; i <= rows; i++){
+      // Spaces
+      for(int j = 1; j <= (rows-i); j++){
+        cout << "   ";
+      }
+      
+      // Stars
+      for(int j = 1; j <= i; j++){
+        cout << " " << (char)(j+64) << " ";
+      }
+      
+      cout << endl;
+    }
+    
+    //11. Row Number Descending Triangle
+    for(int i = 1; i <= rows; i++){
+      // Spaces
+      for(int j = 1; j <= (rows-i); j++){
+        cout << "   ";
+      }
+      
+      // Stars
+      for(int j = i; j >= 1; j--){
+        cout << " " << j << " ";
+      }
+      
+      cout << endl;
+    }
     
     return 0;
 }
